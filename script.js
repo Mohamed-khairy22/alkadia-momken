@@ -23,6 +23,13 @@ function calculateDateDifference() {
     document.getElementById("minutes").textContent = minutes;
     document.getElementById("seconds").textContent = seconds;
 }
+function showResult() {
+    calculateDateDifference();
+    document.getElementById("result").style.display = "block"; // Show the result
+}
+
+// Add event listener to the button
+document.getElementById("showResultButton").addEventListener("click", showResult);
 
 function updateCounter() {
     calculateDateDifference();
